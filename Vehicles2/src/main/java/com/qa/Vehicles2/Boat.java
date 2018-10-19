@@ -6,8 +6,8 @@ public class Boat extends Vehicles{
 	private int numPropellor;
 	
 	
-	public Boat(String brand, int numWheels, int numSeats, boolean radar, int numPropellor) {
-		super(brand,numWheels,numSeats); 
+	public Boat(String model, String brand, int numWheels, int numSeats, boolean radar, int numPropellor) {
+		super(model, brand,numWheels,numSeats); 
 		this.radar = radar;
 		this.numPropellor = numPropellor;
 		
@@ -24,6 +24,24 @@ public class Boat extends Vehicles{
 		return "The boat has moved backwards";
 		
 	}
+
+	public boolean isRadar() {
+		return radar;
+	}
+
+	public void setRadar(boolean radar) {
+		this.radar = radar;
+	}
+
+	public int getNumPropellor() {
+		return numPropellor;
+	}
+
+	public void setNumPropellor(int numPropellor) {
+		this.numPropellor = numPropellor;
+	}
+	
+	
 	
 	
 
